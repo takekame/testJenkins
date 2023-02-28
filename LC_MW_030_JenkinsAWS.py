@@ -50,7 +50,7 @@ class Requests(object):
 
 
 class Middleware(Requests):
-    def __init__(self, ip, username="demo", password="demo", logger=None, enablehttp2=False):
+    def __init__(self, ip, username="tkamei", password="tkamei", logger=None, enablehttp2=False):
         self.logger = logger
         self.httpv2 = enablehttp2
         if username != None:
@@ -356,7 +356,7 @@ if __name__ == '__main__':
     fileName = sys.argv[1]
 
     print("---- P3 getToken ----")
-    mw = Middleware(ip='10.39.18.102')
+    mw = Middleware(ip='3.115.160.211')
     #mw = (ip='10.39.18.103', username='LC_Demo',password='admin')
     print("---- P5 importConfig ----")
     print("---- P7 createNewSession ----")
